@@ -53,7 +53,7 @@ export function Opening({ onNext }: NextProps) {
           <div className="bow">🎀</div>
           <div className="speechBubble">
             {stage === "sleeping" && "tap me..."}
-            {stage === "waking" && "wait it's actually you... huh?"}
+            {stage === "waking" && "wait is that actually you?"}
             {stage === "running" && "I have something for you!!"}
             {stage === "ready" && "Okay okay, now I'm ready!"}
           </div>
@@ -446,11 +446,6 @@ export function FinalMessage() {
           happiness in this dunya and the akhirah. Ameen.
         </p>
       </div>
-
-      <div className="videoBox">
-        Add your video here later 🎥
-      </div>
-
       <p className="ending">May Allah bless you always, Meysha 🤍</p>
     </Screen>
   );
