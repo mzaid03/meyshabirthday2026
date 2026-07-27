@@ -19,7 +19,9 @@ function Screen({ children, night = false }: { children: React.ReactNode; night?
 
 export function Opening({ onNext }: NextProps) {
   const [stage, setStage] = useState<"sleeping" | "waking" | "running" | "ready">("sleeping");
-
+function resetOpening() {
+  setStage("sleeping");
+}
   function startAnimation() {
     if (stage !== "sleeping") return;
 
