@@ -286,7 +286,7 @@ export function StarSky({ onNext }: NextProps) {
 export function MusicBox({ onNext }: NextProps) {
   const questions = [
     {
-      question: "Who is turning 23 today?",
+      question: "So who is the unc of the day?",
       options: ["Abir", "Meysha", "Redwan", "Someya"],
       answer: "Meysha",
     },
