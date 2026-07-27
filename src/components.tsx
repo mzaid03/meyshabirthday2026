@@ -54,7 +54,7 @@ export function Opening({ onNext }: NextProps) {
           <div className="speechBubble">
             {stage === "sleeping" && "tap me..."}
             {stage === "waking" && "wait it's actually you... huh?"}
-            {stage === "running" && "I forgot the gift!!"}
+            {stage === "running" && "I have something for you!!"}
             {stage === "ready" && "Okay okay, now I'm ready!"}
           </div>
         </motion.div>
