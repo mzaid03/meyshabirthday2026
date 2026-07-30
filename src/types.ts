@@ -5,4 +5,5 @@ export type Step =
   | "starSky"
   | "musicBox"
   | "videoDoor"
-  | "final";
+  | "final"
+  | "goodnight";

@@ -418,7 +418,7 @@ export function VideoDoor({ onNext }: NextProps) {
   );
 }
 
-export function FinalMessage() {
+export function FinalMessage({ onNext }: NextProps) {
   return (
     <Screen night>
       <h1 className="title moonTitle">For Meysha</h1>
@@ -449,10 +449,42 @@ export function FinalMessage() {
         </p>
       </div>
       <p className="ending">May Allah bless you always, Meysha 🤍</p>
+
+      <button className="mainBtn" onClick={onNext}>
+        Mochi has one more thing to say...
+      </button>
     </Screen>
   );
 }
+function NextYearDate() {
+  return <span>August 15, 2027</span>;
+}
 
+export function GoodnightMochi({ onReplay }: { onReplay: () => void }) {
+  return (
+    <Screen night>
+      <motion.div
+        className="mochiCharacter sleeping"
+        animate={{ y: [0, -5, 0] }}
+        transition={{ duration: 2.5, repeat: Infinity }}
+      >
+        <div className="catFace">😴</div>
+        <div className="zzz">Zzz</div>
+      </motion.div>
+
+      <p className="ending">
+        Mochi's getting sleepy again... rest well, Meysha 🤍
+      </p>
+      <p className="ending small">
+        See you again on <NextYearDate />, inshAllah and remember like I always say, there is a beautiful day waiting for you! 🌙
+      </p>
+
+      <button className="mainBtn ghost" onClick={onReplay}>
+        Okay one more time before you sleep, Mochi 🐱
+      </button>
+    </Screen>
+  );
+}
 export function Progress({ step, steps }: { step: Step; steps: Step[] }) {
   const index = steps.indexOf(step);
 

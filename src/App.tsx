@@ -7,6 +7,7 @@ import {
   MusicBox,
   VideoDoor,
   FinalMessage,
+  GoodnightMochi,
   RibbonBorder,
   FloatingDecor,
   Progress,
@@ -21,6 +22,7 @@ const steps: Step[] = [
   "musicBox",
   "videoDoor",
   "final",
+  "goodnight",
 ];
 
 export default function App() {
@@ -46,7 +48,10 @@ export default function App() {
       {step === "starSky" && <StarSky onNext={() => goTo("musicBox")} />}
       {step === "musicBox" && <MusicBox onNext={() => goTo("videoDoor")} />}
       {step === "videoDoor" && <VideoDoor onNext={() => goTo("final")} />}
-      {step === "final" && <FinalMessage />}
+      {step === "final" && <FinalMessage onNext={() => goTo("goodnight")} />}
+      {step === "goodnight" && (
+      <GoodnightMochi onReplay={() => goTo("opening")} />
+)}
 
       <button
         className="reset"
