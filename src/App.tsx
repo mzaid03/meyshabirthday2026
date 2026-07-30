@@ -39,7 +39,7 @@ export default function App() {
 
   useEffect(() => {
     if (step !== "opening" && audioRef.current && audioRef.current.paused) {
-      audioRef.current.volume = 0.2;
+      audioRef.current.volume = 0.5;
       audioRef.current.play().catch(() => {
         // autoplay blocked — mute button still lets her start it manually
       });
