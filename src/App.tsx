@@ -33,9 +33,13 @@ export default function App() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const goTo = (next: Step) => {
-    setStep(next);
-    localStorage.setItem("meyshaStep", next);
-  };
+  if (step === "opening" && audioRef.current && audioRef.current.paused) {
+    audioRef.current.volume = 0.1;
+    audioRef.current.play().catch(() => {});
+  }
+  setStep(next);
+  localStorage.setItem("meyshaStep", next);
+};
 
   // restore saved playback position on load, and keep saving it while playing
 useEffect(() => {
