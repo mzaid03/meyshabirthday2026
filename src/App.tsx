@@ -32,10 +32,17 @@ export default function App() {
   const [muted, setMuted] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const goTo = (next: Step) => {
-  if (step === "opening" && audioRef.current && audioRef.current.paused) {
-    audioRef.current.volume = 0.1;
-    audioRef.current.play().catch(() => {});
+const goTo = (next: Step) => {
+  const audio = audioRef.current;
+  if (audio) {
+    const isEnded = audio.ended || audio.currentTime >= audio.duration - 0.5;
+    if (audio.paused) {
+      if (isEnded) {
+        audio.currentTime = 0;
+      }
+      audio.volume = 0.1;
+      audio.play().catch(() => {});
+    }
   }
   setStep(next);
   localStorage.setItem("meyshaStep", next);
