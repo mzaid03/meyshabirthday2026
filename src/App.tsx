@@ -72,14 +72,6 @@ useEffect(() => {
   };
 }, []);
 
-  useEffect(() => {
-    if (step !== "opening" && audioRef.current && audioRef.current.paused) {
-      audioRef.current.volume = 0.1;
-      audioRef.current.play().catch(() => {
-        // autoplay blocked — mute button still lets her start it manually
-      });
-    }
-  }, [step]);
 
   const toggleMute = () => {
     if (!audioRef.current) return;
