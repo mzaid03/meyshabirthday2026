@@ -38,23 +38,35 @@ export default function App() {
   };
 
   // restore saved playback position on load, and keep saving it while playing
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
+useEffect(() => {
+  const audio = audioRef.current;
+  if (!audio) return;
 
+  const restorePosition = () => {
     const savedTime = localStorage.getItem("weddingAudioTime");
     if (savedTime) {
       audio.currentTime = parseFloat(savedTime);
     }
+  };
 
-    const interval = setInterval(() => {
-      if (!audio.paused) {
-        localStorage.setItem("weddingAudioTime", audio.currentTime.toString());
-      }
-    }, 2000);
+  if (audio.readyState >= 1) {
+    // metadata already loaded
+    restorePosition();
+  } else {
+    audio.addEventListener("loadedmetadata", restorePosition);
+  }
 
-    return () => clearInterval(interval);
-  }, []);
+  const interval = setInterval(() => {
+    if (!audio.paused) {
+      localStorage.setItem("weddingAudioTime", audio.currentTime.toString());
+    }
+  }, 2000);
+
+  return () => {
+    audio.removeEventListener("loadedmetadata", restorePosition);
+    clearInterval(interval);
+  };
+}, []);
 
   useEffect(() => {
     if (step !== "opening" && audioRef.current && audioRef.current.paused) {
