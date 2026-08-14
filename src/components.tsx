@@ -476,7 +476,7 @@ export function GoodnightMochi({ onReplay }: { onReplay: () => void }) {
         Mochi's getting sleepy again... rest well, Meysha 🤍
       </p>
       <p className="ending small">
-        See you again on <NextYearDate />, inshAllah and remember like I always say, there is a beautiful day waiting for you!❤️ 
+        See you again on <NextYearDate />, InshAllah and remember like I always say, there is a beautiful day waiting for you!❤️ 
       </p>
 
       <button className="mainBtn ghost" onClick={onReplay}>
