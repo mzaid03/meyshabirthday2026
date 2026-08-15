@@ -431,7 +431,7 @@ export function FinalMessage({ onNext }: NextProps) {
         <p>
           Hope you are doing well, as always!</p>
         <p>
-          Now, I am not going to break your boundaries and wish you a happy birthday and make the same mistake I made last year, and hopefully you can forgive me for that. But I still wanted to take this opportunity to remind you of how much you are appreciated and to make du'a for another year of life that Allah has blessed you with.
+          Now, I know you don't celebrate birthdays, and I want to respect that, especially after my mistake last year. So instead of wishing you a happy birthday, I wanted to use today as an opportunity to remind you of how much you are appreciated and to make du'a for another year of life that Allah has blessed you with.
         </p>
 
         <p>
@@ -463,7 +463,7 @@ export function FinalMessage({ onNext }: NextProps) {
         </p>
 
         <p>
-          And whatever Allah has written for your future, I pray that it is beautiful. I pray that the people, opportunities, accomplishments, and experiences He has written for you bring you closer to Him and fill your life with peace and barakah. And as for everything else that only Allah knows about our futures, I leave it with Him. If there is khayr written for us, then may Allah protect it, guide us toward it in the right way, and make it something that brings both of us closer to Him.
+          And whatever Allah has written for your future, I pray that it is beautiful. I pray that the people, opportunities, accomplishments, and experiences He has written for you bring you closer to Him and fill your life with peace and barakah. And as for everything else that only Allah knows about our futures, I leave it with Him. If there is khayr written for us, then may Allah protect it, guide us toward it in the right way, and make it something that brings both of us closer to Him. And if Allah has written that future for us, then I can't wait for the day I get to call you my wife, In shaa Allah. 🤍
         </p>
 
         <p>
@@ -479,7 +479,11 @@ export function FinalMessage({ onNext }: NextProps) {
         </p>
 
         <p>
-          Walaikum Salam, Meysha. 🤍
+          Take care!
+        </p>
+
+        <p>
+          Assalamu Alaikum, Meysha. 🤍
         </p>
       </div>
       <p className="ending">May Allah bless you always, Meysha 🤍</p>
