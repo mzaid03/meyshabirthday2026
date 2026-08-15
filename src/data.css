@@ -562,3 +562,53 @@ body {
   cursor: pointer;
   z-index: 50;
 }
+
+.giftCardReveal {
+  width: min(600px, 90%);
+  margin: 30px auto;
+  padding: 28px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 28px;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.15),
+    0 0 30px rgba(255, 192, 203, 0.15);
+}
+
+.giftCardIcon {
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+.giftCardReveal h2 {
+  margin-bottom: 20px;
+}
+
+.giftCardDetails {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+
+  margin: 20px 0;
+  padding: 18px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.giftCardDetails p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.giftNote {
+  margin-top: 20px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}

@@ -85,7 +85,7 @@ function resetOpening() {
       {stage === "ready" && (
         <>
           <p className="speech">
-            Assalamu Alaikum Meysha, so glad to meet you again! I have been collecting a few little surprises for someone really special (aka you).
+            Assalamu Alaikum Meysha, so glad to meet you again! I have been collecting a few little surprises for someone really special (aka you)!
           </p>
           <button className="mainBtn" onClick={onNext}>
             Begin the Little Journey
@@ -288,14 +288,14 @@ export function StarSky({ onNext }: NextProps) {
 export function MusicBox({ onNext }: NextProps) {
   const questions = [
     {
-      question: "So who is the unc of the day?",
+      question: "Who is the unc of the day?",
       options: ["Abir", "Meysha", "Redwan", "Someya"],
       answer: "Meysha",
     },
     {
       question: "Who is Abirs favorite Quran reciter?", 
       options: ["Mochi", "Ronaldo", "Mufti Menk", "Meysha"], 
-      answer: "Meysha", letter: "M"
+      answer: "Meysha",
     },
     {
       question: "What is Abirs favorite gift?",
@@ -313,7 +313,7 @@ export function MusicBox({ onNext }: NextProps) {
       answer: "infinite/10",
     },
     {
-      question: "No matter what happens, who is Meysha's biggest fan ever?",
+      question: "Who is Meysha's biggest fan ever?",
       options: [
         "Abir", "Ronaldo", "Mochi", "Meysha herself"],
       answer: "Abir",
@@ -352,7 +352,7 @@ export function MusicBox({ onNext }: NextProps) {
 
   return (
     <Screen>
-      <h1 className="title">Mochi’s Birthday Quiz</h1>
+      <h1 className="title">Mochi's Birthday Quiz</h1>
       <p className="subtitle">
         A few tiny questions about the birthday girl herself 🤭
       </p>
@@ -425,27 +425,61 @@ export function FinalMessage({ onNext }: NextProps) {
 
       <div className="finalCard">
         <p>
-          Assalamu Alaikum Meysha. I wanted this to be something gentle, thoughtful, and
-          meaningful for you. Not just a birthday thing, but a small reminder of how much
-          goodness Allah allowed me to see through you.
+          Assalamu Alaikum Meysha.
         </p>
 
         <p>
-          Thank you for your kindness, your sincerity, your patience, and the way you put
-          effort into the people you care about. Your graduation gift to me was something I
-          will never forget, not just because of what it was, but because of the heart and
-          time behind it.
+          Hope you are doing well, as always!</p>
+        <p>
+          Now, I am not going to break your boundaries and wish you a happy birthday and make the same mistake I made last year, and hopefully you can forgive me for that. But I still wanted to take this opportunity to remind you of how much you are appreciated and to make du'a for another year of life that Allah has blessed you with.
         </p>
 
         <p>
-          Most of all, thank you for helping me become closer to Allah. That is one of the
-          greatest gifts anyone could ever give me.
+          To begin with, I heard that you started Pharmacy School at Touro! Dude, I am so proud of you. Every day you give me another reason to want to become a better version of myself, and I am genuinely proud of the person you are becoming. I know this next chapter is not always going to be easy, but I genuinely believe you are capable of accomplishing everything you are working toward. May Allah make this journey as smooth as possible for you, place barakah in your education, and grant you the best pharmacy school experience along with all the success you ask Him for. In shaa Allah, one day you are going to look back at all the studying, stress, long nights, and sacrifices and realize that they helped shape you into the amazing pharmacist you worked so hard to become.
         </p>
 
         <p>
-          May Allah bless your life, your studies, your heart, your family, and every du’a
-          you make in silence. May He protect you, increase you in noor, and grant you
-          happiness in this dunya and the akhirah. Ameen.
+          Meysha, you are genuinely one of the most thoughtful people I have ever met. And I do not just say that because of the big things you have done. It is the little things too. The way you care about people, the effort you put into things, your patience, your kindness, and how naturally you make the people around you feel cared for. Those are qualities that cannot be bought or forced. They come from the heart, and I hope you never lose them.
+        </p>
+
+        <p>
+          I will obviously never forget what you did for my graduation. You spent so many hours making that bouquet and garland for me, and I do not think I will ever be able to look at them as just gifts. What meant the most to me was knowing how much of your time, effort, and heart went into making someone else happy. That is just the kind of person you are, and I hope you know that your effort never went unnoticed.
+        </p>
+
+        <p>
+          But beyond every gift, every memory, and everything else, one of the greatest things you have ever done for me is something you probably cannot even hold in your hands. You helped me become closer to Allah. Through our conversations and the person you have shown yourself to be, you gave me another reason to look at myself and want to become stronger in my deen and better in my character. That is something I will always be grateful to you for, because there are very few gifts more valuable than someone having a positive impact on your relationship with Allah.
+        </p>
+
+        <p>
+          So more than anything else, I just want to say thank you. Thank you for your kindness, your sincerity, your patience, your effort, and for simply being the person you are.
+        </p>
+
+        <p>
+          And for this next year Allah has given you, I have a lot more du'as for you than I have wishes.
+        </p>
+
+        <p>
+          May Allah increase you in noor. May He protect you and your family from every form of harm. May He place endless barakah in your education, your health, your time, and your future. May He make Pharmacy School easy for you and allow you to become a pharmacist who brings comfort and benefit to countless people. May He strengthen your iman through every stage of your life, keep your heart close to Him, and never allow this dunya to take away the beautiful qualities He has placed within you. May Allah answer the du'as you make quietly that nobody else knows about, grant you things greater than what you thought to ask for, and make every difficulty you experience a means of bringing you closer to Him.
+        </p>
+
+        <p>
+          And whatever Allah has written for your future, I pray that it is beautiful. I pray that the people, opportunities, accomplishments, and experiences He has written for you bring you closer to Him and fill your life with peace and barakah. And as for everything else that only Allah knows about our futures, I leave it with Him. If there is khayr written for us, then may Allah protect it, guide us toward it in the right way, and make it something that brings both of us closer to Him.
+        </p>
+
+        <p>
+          Never stop being the kind, thoughtful, hardworking, slightly crazy future pharmacist that you are. You have an incredibly beautiful journey ahead of you, In shaa Allah.
+        </p>
+
+        <p>
+          May Allah increase you in noor, Meysha, and may He make this next year of your life better than every year that came before it.
+        </p>
+
+        <p>
+          And with that... I think Mochi has bothered you enough for one day 😭.
+        </p>
+
+        <p>
+          Walaikum Salam, Meysha. 🤍
         </p>
       </div>
       <p className="ending">May Allah bless you always, Meysha 🤍</p>
@@ -480,7 +514,7 @@ export function GoodnightMochi({ onReplay }: { onReplay: () => void }) {
       </p>
 
       <button className="mainBtn ghost" onClick={onReplay}>
-        Okay one more time before you sleep, Mochi 🐱
+        While I sleep I'll take you back to the beginning of this journey! 🐱
       </button>
     </Screen>
   );
