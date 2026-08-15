@@ -475,7 +475,7 @@ export function FinalMessage({ onNext }: NextProps) {
         </p>
 
         <p>
-          And with that... I think Mochi has bothered you enough for one day 😭. Oh and hope you like the other little gift I sent you!!🙂
+          And with that... I think Mochi has bothered you enough for one day 😭. Oh and I heard you like shopping at Target so hope you like the other little gift I sent you!!🙂
         </p>
 
         <p>
